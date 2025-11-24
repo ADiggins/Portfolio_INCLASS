@@ -1,0 +1,121 @@
+/* https://coolors.co/7180ac-22333b-a8d0db-e49273-a37a74 */
+
+html {
+    background-color: #22333b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body {
+    background-color: #7180ac;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 800px;
+    height: 90vh;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.642);
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+my-header {
+    border-bottom: #e49273 5px solid;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    font-family: 'Oswald';
+    font-weight: 250;
+}
+
+button:hover {
+    cursor:pointer;
+}
+
+#navigationButtons {
+    display:flex;
+    flex-direction: row;
+    gap: 5px;
+    /* block-size: 100px; EXPERIMENT */
+}
+
+#navigationButtons button {
+    width:115px;
+    padding:5px 10px;
+    font-size: 16px;
+    background: #a8d0db;
+    border: #22333b 3px solid;
+    border-bottom:none;
+    border-radius: 20px 20px 0 0;
+    transition: border-color 0.3s;
+}
+
+#navigationButtons button:hover {
+    border-color: #e49273;
+}
+
+#mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainContent_buttons {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+
+#mainContent_buttons button {
+    width:125px;
+    height:75px;
+    font-size:21px;
+    /* color:  */
+    border: #22333b 4px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.341);
+    transition: border-color 0.3s;
+}
+
+#mainContent_buttons button:hover {
+    border-color: #e49273;
+}
+
+my-footer {
+    border-top: #e49273 5px solid;
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    display:flex;
+    flex-direction:column;
+    align-items: end;
+    padding: 0 20px; /* TO CHECK. Make's box wider*/
+}
+
+my-opener {
+    background: white;
+    border-radius: 20px;
+    position: fixed;
+    top:25%;
+}
+
+#opener form {
+    display:flex;
+    flex-direction: column;
+    align-items:start;
+    row-gap:20px;
+    padding:20px;
+}
+
+#opener form label {
+    display: flex;
+    flex-direction: column;
+}
