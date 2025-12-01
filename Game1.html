@@ -5,14 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game 1</title>
     <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="GamePage.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <script type="module" src="CustomHTMLElements.js"></script>
 </head>
 <body>
     <my-header></my-header>
 
-    <div id="bodyContainer"> </div>
+    <div id="bodyContainer"> 
+        <p> This is a brief description of the game you're showcasing</p>
+
+        <div id = "slideshow">
+            <div class="slide">
+                <img src="Images/Image1.png" alt="">
+                <p>Caption #1 -- Describe the above image</p>
+            </div>
+            <div class="slide">
+                <img src="Images/Image2.png" alt="">
+                <p>Caption #2</p>
+            </div>
+            <div class="slide">
+                <img src="Images/Image3.png" alt="">
+                <p>Caption #3</p>
+            </div>
+
+            <a id="NextImg" onclick="changeSlide(1)"> &#10095; </a>
+            <a id="PrvImg" onclick="changeSlide(-1)"> &#10094; </a>
+
+        </div>
+
+    </div>
 
     <my-footer></my-footer>
 </body>
 </html>
+<script src="GamePage.js"></script>
