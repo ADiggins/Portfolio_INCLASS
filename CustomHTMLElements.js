@@ -18,7 +18,19 @@ class MyHeader extends HTMLElement {
 class MyFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-            <p>This is the footer</p>
+            <p> 🡻 🡻 &emsp; Like what you see?  Give me shout! &emsp; 🡻 🡻 </p>
+            <form action="https://api.web3forms.com/submit" method="POST" id="footerForm">
+                <div class="footerRow" id="row1">
+                    <input type="hidden" name="access_key" value="ba7863c2-3747-4387-be29-e34ffd7f5549">
+                    <input type="text" placeholder="Your Name" name="Contact's name">
+                    <input type="text" placeholder="Who do you work for?" name="Contact's workplace">
+                    <input type="text" placeholder="How can I get back to you?" name="Contact's email">
+                </div>
+                <div class="footerRow" id="row2">
+                    <input type="text" placeholder="Feedback? What did you like?" name="Given feedback">
+                    <input type="submit" id="footerFormSubmit">
+                </div>
+            </form>
         `
     }
 }

@@ -5,6 +5,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    overflow:hidden;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
     position: relative;
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
+    overflow:hidden;
 }
 
 my-header {
@@ -90,15 +92,65 @@ button:hover {
 }
 
 my-footer {
+    background-color: #7180ac;
     border-top: #e49273 5px solid;
     position: absolute;
-    bottom: 0px;
+    bottom: -115px;
     width: 90%;
     display:flex;
     flex-direction:column;
-    align-items: end;
+    align-items: center;
     padding: 0 20px; /* TO CHECK. Make's box wider*/
+    margin:0px;
+    transition: bottom 0.3s ease-out; 
 }
+
+my-footer:hover {
+    bottom:0px;
+}
+
+my-footer p{
+    font-size: 24px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+my-footer #footerForm {
+    display:flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-bottom:10px;
+    width:100%;
+}
+
+my-footer .footerRow {
+    display:flex;
+    flex-direction: row;
+    column-gap: 10px;
+    
+}
+
+.footerRow input {
+    font-size:18px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 5px;
+    border: 2px black solid;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.24);
+    padding:7px;
+}
+
+#row1 input {
+    flex: 1;
+}
+
+#row2 input {
+    flex: 2;
+}
+
+#row2 #footerFormSubmit {
+    flex: 0.5;
+}
+
 
 my-opener {
     background: white;
